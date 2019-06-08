@@ -1,5 +1,19 @@
-teste do github
-
-Gostou do Vídeo faça uma doacão, até um café é valido.
-
-git diff
+adicionando o arquivo na primeira area
+   # git add nomedoarquivo
+comitando o arquivo
+   # git commit -m "lembrete do arquivo"
+comitando todos os arquivos de uma unica vez
+   # git commit -am "lembrete do arquivo"
+Verificando o local aonde encontra-se o status do arquivo
+   # git status
+Verificando outros dados sobre o arquivo adicionado
+   # git diff nomedoarquivo
+Verificando o log dos commits
+   # git log
+Retornando o git ao status anterior, já adicionado, mas nao comitado,
+Observação: tem que ser o hash anterior ao que deseja voltar(apagar)
+   # git reset --soft 5eedc6262b74fefa52d5526bb2c0469adefaff52
+Retornando o git ao status antes de ser adicionado
+   # git reset --mixed 5eedc6262b74fefa52d5526bb2c0469adefaff52
+Retornando o git ao status anterior a tudo, inclusive o histórico é apagado (Muito Cuidado)
+   # git reset --hard 5eedc6262b74fefa52d5526bb2c0469adefaff52
