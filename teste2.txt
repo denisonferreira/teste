@@ -1,3 +1,5 @@
 teste do github
 
 Gostou do Vídeo faça uma doacão, até um café é valido.
+
+git diff
