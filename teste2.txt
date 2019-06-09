@@ -1,52 +1,83 @@
 adicionando o arquivo na primeira area
    # git add nomedoarquivo
+
 comitando o arquivo
    # git commit -m "lembrete do arquivo"
+
 comitando todos os arquivos de uma unica vez
    # git commit -am "lembrete do arquivo"
+
 Verificando o local aonde encontra-se o status do arquivo
    # git status
+
+Mostra o que foi modificado
+   # git show
+
 Verificando outros dados sobre o arquivo adicionado
    # git diff nomedoarquivo
+
 Verificando o log dos commits
    # git log
+
 Retornando o git ao status anterior, já adicionado, mas nao comitado,
 Observação: tem que ser o hash anterior ao que deseja voltar(apagar)
    # git reset --soft 5eedc6262b74fefa52d5526bb2c0469adefaff52
+
 Retornando o git ao status antes de ser adicionado
    # git reset --mixed 5eedc6262b74fefa52d5526bb2c0469adefaff52
+
 Retornando o git ao status anterior a tudo, inclusive o histórico é apagado (Muito Cuidado)
    # git reset --hard 5eedc6262b74fefa52d5526bb2c0469adefaff52
+
 Criando a chave ssh publica e privada
    ssh-keygen -t rsa -b 4096 -C "denison.ferreira@hotmail.com.br"
 obs.: pegue o hash gerado e no site do git vá em settings e na configuraçao do ssh cole
    depois vá no terminal e cole o comando que vai está na pagina home
-   # git remote add origin git@github.com:denisonferreira/github_course.git
+
+  # git remote add origin git@github.com:denisonferreira/github_course.git
+
    após criado digite:
-   # git remote
+  # git remote
+
 traz mais informações
-   #git remote -v
+  #git remote -v
+
 depois pega este comando no site do github e copia e cola: ele irá enviar todas as informações que estão em nosso git local e enviará para o git remoto.
-   #git push -u origin master
+  #git push -u origin master
+
 para clonar no git
   # git clone git@github.com:denisonferreira/teste.git nomedapasta
+
 criando um branche
   # git checkout -b nomedabranch
+
 mostra em qual branch você está
   # git branch
+
 mudando para outra branch
   # git checkout nomedabranche
+
 escrevendo em outra branch e fazendo um merge
 ele cria um novo historico com juntando os adds da branch master e a branch denison
   # git merge nomedabranch
+
 o rebase ele faz a mesma coisa do merge, porém cria um historico linear
   # git rebase nomedabranch
+
 o git ignore, precisa criar um arquivo .gitignore e dentro dele especificar o arquivo que nao quer que seja adicionado
 exemplo, exemplo.txt ou *.txt(para ignorar tudo .txt)
   
-  o git stash serve para quando tiver um arquivo que não queira subir naquele momento deixando ele em standby
+o git stash serve para quando tiver um arquivo que não queira subir naquele momento deixando ele em standby
   # git stash -> pegará as atualizações do status e colocará no stash.
   # git stash apply -> aplica o stash
   # git stash list -> lista os stash's
   # git stash clear -> limpa os stash's
-  
+
+criando um Alias, exemplo ao digitar git s ele interpretará git status
+  # git config --global alias.s status
+
+crianto tags
+  # git tag  -a 1.0.1 -m "add tags"
+  # git push origin master --tags
+ele retorna o git ao ponto do rash desejado
+  #git revert hash_a_ser_apagada
