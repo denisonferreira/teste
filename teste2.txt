@@ -41,3 +41,5 @@ ele cria um novo historico com juntando os adds da branch master e a branch deni
   # git merge nomedabranch
 o rebase ele faz a mesma coisa do merge, porém cria um historico linear
   # git rebase nomedabranch
+o git ignore, precisa criar um arquivo .gitignore e dentro dele especificar o arquivo que nao quer que seja adicionado
+exemplo, exemplo.txt ou *.txt(para ignorar tudo .txt)
