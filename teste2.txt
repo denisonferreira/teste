@@ -36,3 +36,4 @@ mostra em qual branch você está
   # git branch
 mudando para outra branch
   # git checkout nomedabranche
+escrevendo em outra branch e fazendo um merge
