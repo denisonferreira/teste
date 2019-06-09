@@ -43,3 +43,10 @@ o rebase ele faz a mesma coisa do merge, porém cria um historico linear
   # git rebase nomedabranch
 o git ignore, precisa criar um arquivo .gitignore e dentro dele especificar o arquivo que nao quer que seja adicionado
 exemplo, exemplo.txt ou *.txt(para ignorar tudo .txt)
+  
+  o git stash serve para quando tiver um arquivo que não queira subir naquele momento deixando ele em standby
+  # git stash -> pegará as atualizações do status e colocará no stash.
+  # git stash apply -> aplica o stash
+  # git stash list -> lista os stash's
+  # git stash clear -> limpa os stash's
+  
