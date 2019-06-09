@@ -30,3 +30,9 @@ depois pega este comando no site do github e copia e cola: ele irá enviar todas
    #git push -u origin master
 para clonar no git
   # git clone git@github.com:denisonferreira/teste.git nomedapasta
+criando um branche
+  # git checkout -b nomedabranch
+mostra em qual branch você está
+  # git branch
+mudando para outra branch
+  # git checkout nomedabranche
