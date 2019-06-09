@@ -28,3 +28,5 @@ traz mais informações
    #git remote -v
 depois pega este comando no site do github e copia e cola: ele irá enviar todas as informações que estão em nosso git local e enviará para o git remoto.
    #git push -u origin master
+para clonar no git
+  # git clone git@github.com:denisonferreira/teste.git nomedapasta
