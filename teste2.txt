@@ -37,3 +37,7 @@ mostra em qual branch você está
 mudando para outra branch
   # git checkout nomedabranche
 escrevendo em outra branch e fazendo um merge
+ele cria um novo historico com juntando os adds da branch master e a branch denison
+  # git merge nomedabranch
+o rebase ele faz a mesma coisa do merge, porém cria um historico linear
+  # git rebase nomedabranch
