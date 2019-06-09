@@ -17,3 +17,14 @@ Retornando o git ao status antes de ser adicionado
    # git reset --mixed 5eedc6262b74fefa52d5526bb2c0469adefaff52
 Retornando o git ao status anterior a tudo, inclusive o histórico é apagado (Muito Cuidado)
    # git reset --hard 5eedc6262b74fefa52d5526bb2c0469adefaff52
+Criando a chave ssh publica e privada
+   ssh-keygen -t rsa -b 4096 -C "denison.ferreira@hotmail.com.br"
+obs.: pegue o hash gerado e no site do git vá em settings e na configuraçao do ssh cole
+   depois vá no terminal e cole o comando que vai está na pagina home
+   # git remote add origin git@github.com:denisonferreira/github_course.git
+   após criado digite:
+   # git remote
+traz mais informações
+   #git remote -v
+depois pega este comando no site do github e copia e cola: ele irá enviar todas as informações que estão em nosso git local e enviará para o git remoto.
+   #git push -u origin master
